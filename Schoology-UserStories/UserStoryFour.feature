@@ -1,18 +1,14 @@
-@101
-Feature:  media inquiry as an unregistered user 
-@positive 
+Feature: media inquiry as an unregistered user
 
-             Scenario: positive test case 
-              Given a user opens a browser 
-              And user navigates to” http;//www.schoology.com”
-              And user clicks “about” button 
-              Then user clicks “contact”
-              When user enters the first name “shazia”
-              Then  user  enters the last name “beg”
-              And user enter the email “beg.shaz@yahoo.com”
-              And user enter the phone number “555.555.333”
-              Then user enter the institution name”nova “
-              And user enter the job title “banker”
-              Then user enters enters the comment in the comment box 
-              And user clicks submit
-             
+  Scenario: positive test case
+    Given a user opens a browser to schoology homepage
+    And user clicks about button
+    And user clcks contacts
+    When user enters the first name "shazia"
+    Then user enters the last name "khan"
+    And use renters the email "shazia3699@gmail.com"
+    And user enters the phone number "222.222.222"
+    Then user enters the institution name "noav"
+    And user enters the job tital "banker"
+    And user enter the comment in the commeent box
+    Then user submit
